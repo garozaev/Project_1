@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Project_1/assets/styles/normalize.css">
+    <link rel="stylesheet" href="../Project_1/assets/styles/style.css">
+    <title>Project-1</title>
+    <style>
+    .page_4 {
+        display: grid;
+        width: 1300px;
+        height: 1463px;
+        margin: 10px 197px 10px 103px;
+        grid-template-columns: 600px 600px;
+        grid-template-rows: repeat(4,250px) 1fr;
+        align-content: stretch;
+        justify-content: end;
+        border: 1px solid blue;
+    }
+    .h1 {
+        grid-area: 1/1/2/3;
+        border-bottom: 3px solid red;
+        /*border: 1px solid red;
+        background-color: beige;*/
+    }
+    .inprice {
+        border-bottom: 3px solid red;
+        /*border: 1px solid red;
+        background-color: rgb(149, 186, 151);*/
+    }
+    .list_inprice {
+        border-bottom: 3px solid red;
+        /*border: 1px solid red;
+        background-color: rgb(231, 210, 173);*/
+    }
+    .recomm {
+        border-bottom: 3px solid red;
+        /*background-color: rgb(183, 216, 193);*/
+    }
+    .list_recomm {
+        border-bottom: 3px solid red;
+        /*border: 1px solid red;
+        background-color: rgb(206, 165, 199);*/
+    }
+    .food {
+        border-bottom: 3px solid red;
+        /*border: 1px solid red;
+        background-color: rgb(114, 220, 230);*/
+    }
+    .food_text {
+        border-bottom: 3px solid red;
+        /*border: 1px solid red;
+        background-color: rgb(152, 212, 148);*/
+    }
+    .important {
+        border-bottom: 3px solid red;
+        /*border: 1px solid red;
+        background-color: rgb(123, 123, 105);*/
+    }
+    .picture-important {
+        /*border: 1px solid red;
+        background-color: rgb(231, 231, 135);*/
+    }
+    p {
+        /*background-color: aqua;*/
+        font-size: 40px;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 122px 738px 70px 0;
+    }
+    .p1,
+    .p2,
+    .p3,
+    .p4 {
+        margin-top: 40px;
+        /*border: 1px solid black;*/
+        font-family: Montserrat;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+    }
+    .list1,
+    .list2 {
+        margin-top: 50px;
+        /*color: var(--, #242424);*/
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 25.2px */
+        /*border: 1px solid black;*/
+    }
+    li {
+        margin-bottom: 15px;
+    }
+    .text1,
+    .text2 {
+        margin-top: 47px;
+        /*border: 1px solid black;*/
+        color: var(--, #242424);
+        font-family: Montserrat;
+        font-size: 18px;
+        ont-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    </style>
+</head>
+<body>
+    <div class="page_4">
+        <div class="h1">
+            <p>Условия размещения</p>
+        </div>
+        <div class="inprice">
+            <div class="p1">В стоимость проживания включено</div>
+        </div>
+        <div class="list_inprice">
+            <!--<div class="list1">-->
+                <ul class="list1">
+                    <li>наполнитель на выбор</li>
+                    <li>ежедневные игры и внимание</li>
+                    <li>ежедневный фото/видеоотчет</li>
+                    <li>лоток</li>
+                    <li>мисочки для корма и воды</li>
+                </ul>
+            <!--</div>-->
+        </div>
+        <div class="recomm">
+            <div class="p2">Рекомендации</div>
+        </div>
+        <div class="list_recomm">
+            <ul class="list2">
+                <li>лежанку</li>
+                <li>любимую игрушку</li>
+                <li>вещь с Вашим запахом</li>
+                <li>лоток</li>
+                <li>немного наполнителя с его запахом</li>
+            </ul>
+        </div>
+        <div class="food">
+            <div class="p3">Питание</div>
+        </div>
+        <div class="food_text">
+            <div class="text1">
+                Корм необходимо принести с собой из расчета периода нахождения котика в нашей гостинице, согласно индивидуальному плану кормления. 
+            </div>
+            <div class="text2"> 
+                В случае, если корм закончится, по согласованию с Вами, мы купим корм. При выселении необходимо будет доплатить, согласно чеку за покупку.
+            </div>
+        </div>
+        <div class="important">
+            <div class="p1">ВАЖНОЕ !</div>
+            <ul class="list2">
+                <li>Мы ежедневно наблюдаем за поведением и самочувствием Вашего котика!</li>
+                <li>В случае любого отклонения от нормы, мы свяжемся с Вами!</li>
+                <li>При необходимости и с Вашего согласия обратимся в ветеринарную клинику.</li>
+                <li>При выселении необходимо будет доплатить за понесенные расходы, согласно чеку на оказание услуг.</li>
+        </div>
+        <div class="picture-important">
+            <img src="../Project_1/assets/images/Cat inportent.png"/>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
