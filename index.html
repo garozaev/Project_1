@@ -20,41 +20,41 @@
     }
     .h1 {
         grid-area: 1/1/2/3;
-        border-bottom: 3px solid red;
+        border-bottom: 3px solid #F6A6BF;
         /*border: 1px solid red;
         background-color: beige;*/
     }
     .inprice {
-        border-bottom: 3px solid red;
+        border-bottom: 3px solid #F6A6BF;
         /*border: 1px solid red;
         background-color: rgb(149, 186, 151);*/
     }
     .list_inprice {
-        border-bottom: 3px solid red;
+        border-bottom: 3px solid #F6A6BF;
         /*border: 1px solid red;
         background-color: rgb(231, 210, 173);*/
     }
     .recomm {
-        border-bottom: 3px solid red;
+        border-bottom: 3px solid #F6A6BF;
         /*background-color: rgb(183, 216, 193);*/
     }
     .list_recomm {
-        border-bottom: 3px solid red;
+        border-bottom: 3px solid #F6A6BF;
         /*border: 1px solid red;
         background-color: rgb(206, 165, 199);*/
     }
     .food {
-        border-bottom: 3px solid red;
+        border-bottom: 3px solid #F6A6BF;
         /*border: 1px solid red;
         background-color: rgb(114, 220, 230);*/
     }
     .food_text {
-        border-bottom: 3px solid red;
+        border-bottom: 3px solid #F6A6BF;
         /*border: 1px solid red;
         background-color: rgb(152, 212, 148);*/
     }
     .important {
-        border-bottom: 3px solid red;
+        /*border-bottom: 3px solid red;*/
         /*border: 1px solid red;
         background-color: rgb(123, 123, 105);*/
     }
@@ -109,6 +109,86 @@
         font-weight: 400;
         line-height: 140%;
     }
+    
+    .page_5 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 1278px;
+        height: 694px;
+        margin-top: 140px;
+        margin-right: 200px;
+        margin-left: 122px;
+        border: 1px solid blue;
+    }
+    .h2 {
+        border: 1px solid red;
+        width: 540px;
+        height: 49px;
+        margin-left: 78px;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 49px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+    .container {
+        display: flex;
+        flex-grow: 1;
+        border: 1px solid red;
+    }
+    .picture_reservation {
+        justify-self: flex-start;
+        align-self: flex-end;
+        background-image: url(assets/images/fon_kitty.png);
+        border: 1px solid green;
+        width: 625px;
+        height: 595px;
+    }
+    .kitty {
+        margin: 145px 217px 235.35px 132px;
+    }
+    .reserv {
+        /*justify-self: flex-end;
+        align-self: flex-end;*/
+        display: grid;
+        grid-template-columns: repeat(2, 230px);
+        grid-template-rows: repeat(4, 35px) 1fr;
+        margin: 20px 0px 21px 44px;
+        border: 1px solid black;
+        align-self: end;
+        width: 609px;
+        height: 554px;
+        gap: 50px
+    }
+
+    .button {
+        grid-area: 5/1/6/3;
+        margin: 50px 50px 50px 50px;
+    }
+    .reservation_button {
+        width: 330px;
+        height: 70px;
+        border-radius: 100px;
+        background-color: #F6A6BF;
+    }
+    .cont_note {
+        grid-area: 4/1/5/3;
+        margin: 50px 50px 50px 50px;
+    }
+    .cont {
+        margin: 50px 50px 50px 50px;
+    }
+    .cont_mane,
+    .cont_phone,
+    .cont_checkin,
+    .cont_checkout,
+    .cont_petmane,
+    .cont_type {
+        margin: 50px 50px 50px 50px;
+    }
     </style>
 </head>
 <body>
@@ -162,8 +242,67 @@
                 <li>При выселении необходимо будет доплатить за понесенные расходы, согласно чеку на оказание услуг.</li>
         </div>
         <div class="picture-important">
-            <img src="../Project_1/assets/images/Cat inportent.png"/>
+            <img src="assets/images/Cat inportent.png"/>
         </div>
+    </div>
+    <div class="page_5">
+        <div class="h2">
+            Заявка на бронирование
+            <!--<p>Заявка на бронирование</p>-->
+        </div>
+        <div class="container">
+        <div class="picture_reservation">
+            <img class="kitty" src="assets/images/kitty.jpg"/>
+        </div>
+        <div class="reserv">
+                <div class="cont_mane">
+                <label for="name">Имя</label>
+                    <div>
+                        <input type="text" id="name">
+                    </div>
+                </div>
+                <div class="cont_phone">
+                    <label for="phone">Телефон</label>
+                    <div>
+                        <input type="text" id="phone">
+                    </div>
+                </div>
+                <div class="cont_checkin">
+                        <label for="checkin">Дата заезда</label>
+                    <div>
+                        <input type="text" id="checkin">
+                    </div>
+                </div>
+                <div class="cont_checkout">
+                        <label for="checkout">Дата выезда</label>
+                    <div>
+                        <input type="text" id="checkout">
+                    </div>
+                </div>
+                <div class="cont_petmane">
+                        <label for="petname">Кличка животного</label>
+                    <div>
+                        <input type="text" id="petname">
+                    </div>
+                </div>
+                <div class="cont_type">
+                        <label for="type">Тип номера</label>
+                    <div>
+                        <input type="text" id="type">
+                    </div>
+                </div>
+                <div class="cont_note">
+                        <label for="note">Примечание</label>
+                    <div>
+                        <input type="text" id="note">
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="reservation_button">
+                    Забронировать
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
