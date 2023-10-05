@@ -14,9 +14,9 @@
         margin: 10px 197px 10px 103px;
         grid-template-columns: 600px 600px;
         grid-template-rows: repeat(4,250px) 1fr;
-        align-content: stretch;
+        /* align-content: stretch; */
         justify-content: end;
-        /* border: 1px solid blue; */
+        border: 1px solid blue;
     }
     .fon_kitty {
         position: absolute;
@@ -43,12 +43,14 @@
     .food,
     .food_text {
         border-bottom: 3px solid #F6A6BF;
-        /*border: 1px solid red;
-        background-color: rgb(149, 186, 151);*/
+        border: 1px solid red;
+        background-color: rgb(149, 186, 151);
     }
     li {
+        margin-right: 210px;
         list-style-type: none;/*прячет разметку*/
         margin-bottom: 15px;
+        border: 1px solid blue;
     }
     li::before {
         color: #F6A6BF;
@@ -78,8 +80,8 @@
     .p2,
     .p3,
     .p4 {
-        margin-top: 40px;
-        /*border: 1px solid black;*/
+        margin-top: 30px;
+        border: 1px solid black;
         font-family: Montserrat;
         font-size: 26px;
         font-style: normal;
@@ -87,26 +89,32 @@
         line-height: 140%;
     }
     .list1,
-    .list2 {
-        margin-top: 50px;
+    .list2,
+    .list3 {
+        margin-top: 30px;
         /*color: var(--, #242424);*/
         font-family: Montserrat;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
         line-height: 140%; /* 25.2px */
-        /*border: 1px solid black;*/
+        border: 1px solid black;
     }
     .text1,
     .text2 {
-        margin-top: 47px;
-        /*border: 1px solid black;*/
+        margin: 30px 150px 10px 50px;
+        border: 1px solid black;
         color: var(--, #242424);
         font-family: Montserrat;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
         line-height: 140%;
+    }
+    .picture-important,
+    .important {
+        background-color: aqua;
+        border: 1px solid black;
     }
     .page_5 {
         display: flex;
@@ -117,10 +125,10 @@
         margin-top: 140px;
         margin-right: 200px;
         margin-left: 122px;
-        /* border: 1px solid blue; */
+        border: 1px solid blue;
     }
     .h2 {
-        /* border: 1px solid red; */
+        border: 1px solid red;
         width: 540px;
         height: 49px;
         margin-left: 78px;
@@ -134,14 +142,13 @@
     .container {
         display: flex;
         flex-grow: 1;
-        /* align-content: space-between; */
-        /* border: 1px solid red; */
+        border: 1px solid red;
     }
     .picture_reservation {
         justify-self: flex-start;
         align-self: flex-end;
         /* background-image: url(assets/images/fon_kitty.png); */
-        /* border: 1px solid green; */
+        border: 1px solid green;
         width: 625px;
         height: 595px;
     }
@@ -149,7 +156,6 @@
         position: absolute;
         z-index: 1;
         margin: 145px 217px 235.35px 132px;
-        background: none;
     }
     .fon_reservation {
         position: absolute;
@@ -158,29 +164,49 @@
         z-index: -1;
         /* margin: 100.18px 167.11 152.85 105.51; */
         background-image: url(assets/images/fon_kitty.png);
-        /* border: 5px solid blue; */
+        border: 5px solid blue;
     } 
     .foot_print1 {
         margin: 170px 110px;
     }
     .reserv {
-        /* justify-self: flex-end; */
-        /* align-self: flex-end; */
         display: grid;
-        grid-template-columns: repeat(2, 230px);
-        grid-template-rows: repeat(4, 35px) 1fr;
+        grid-template-columns: repeat(2,max-content);
+        grid-template-rows: repeat(5,max-content);
+        justify-content: center;
+        align-content: center;
         margin: 20px 0px 21px 44px;
         background-color: #FFFEF1;
-        /* border: 1px solid black; */
+        border: 1px solid black;
         align-self: end;
         width: 609px;
         height: 554px;
-        gap: 50px; 
+        gap: 40px; 
     }
-    .button {
+    .cont_mane,
+    .cont_phone,
+    .cont_checkin,
+    .cont_checkout,
+    .cont_petmane,
+    .cont_type {
+        border: 1px solid black;
+    }
+    .cont_note {
+        grid-area: 4/1/5/3;
+        background-color: aquamarine;
+        border: 1px solid black;
+    }
+    
+    input {
+        border: none;
+        background-color: #FFFEF1;
+        border-bottom: 1px solid black;
+        /* opacity: 1%; */
+    }
+    .cont_button {
         grid-area: 5/1/6/3;
-        margin: 50px 50px 50px 50px;
-        /* background-color: aqua; */
+        /* margin: 50px 50px 50px 50px; */
+        background-color: aqua;
         
     }
     .reservation_button {
@@ -199,28 +225,9 @@
     .reservation_button:active {
         background-color: rgb(235, 20, 88);
     }
-    .cont_note {
-        grid-area: 4/1/5/3;
-        margin: 50px 50px 50px 50px;
-        background-color: aquamarine;
-    }
-    /*.input_note {
-        
-    }*/
-    .cont_mane,
-    .cont_phone,
-    .cont_checkin,
-    .cont_checkout,
-    .cont_petmane,
-    .cont_type {
-        margin: 50px 50px 50px 50px;
-        /* border-top: 1px solid black; */
-    }
-    input {
-        border: none;
-        background-color: #FFFEF1;
-        border-bottom: 1px solid black;
-        /* opacity: 1%; */
+    .input_note {
+        width: 450px;
+        min-height: max-content;
     }
     </style>
 </head>
@@ -238,27 +245,25 @@
             <div class="p1">В стоимость проживания включено</div>
         </div>
         <div class="list_inprice">
-            <!--<div class="list1">-->
-                <ul class="list1">
+                <div class="list1">
                     <li>наполнитель на выбор</li>
                     <li>ежедневные игры и внимание</li>
                     <li>ежедневный фото/видеоотчет</li>
                     <li>лоток</li>
                     <li>мисочки для корма и воды</li>
-                </ul>
-            <!--</div>-->
+                </div>
         </div>
         <div class="recomm">
             <div class="p2">Рекомендации</div>
         </div>
         <div class="list_recomm">
-            <ul class="list2">
+            <div class="list2">
                 <li>лежанку</li>
                 <li>любимую игрушку</li>
                 <li>вещь с Вашим запахом</li>
                 <li>лоток</li>
                 <li>немного наполнителя с его запахом</li>
-            </ul>
+            </div>
         </div>
         <div class="food">
             <div class="p3">Питание</div>
@@ -273,12 +278,13 @@
         </div>
         <div class="important">
             <div class="p1">ВАЖНОЕ !</div>
-            <ul class="list2">
+            <div class="list3">
                 <li>Мы ежедневно наблюдаем за поведением и самочувствием Вашего котика!</li>
                 <li>В случае любого отклонения от нормы, мы свяжемся с Вами!</li>
                 <li>При необходимости и с Вашего согласия обратимся в ветеринарную клинику.</li>
                 <li>При выселении необходимо будет доплатить за понесенные расходы, согласно чеку на оказание услуг.</li>
-        </div>
+            </div>
+            </div>
         <div class="picture-important">
             <img src="assets/images/Cat inportent.png"/>
         </div>
@@ -289,58 +295,58 @@
             <!--<p>Заявка на бронирование</p>-->
         </div>
         <div class="container">
-                <div class="picture_reservation">
-                    <img class="kitty" src="assets/images/kitty2.svg"/>
-                    <div class="fon_reservation">
-                        <div class="foot_print1">
-                            <img src="assets/images/footprint.png"/>
-                        </div>
+            <div class="picture_reservation">
+                <img class="kitty" src="assets/images/kitty2.svg"/>
+                <div class="fon_reservation">
+                    <div class="foot_print1">
+                        <img src="assets/images/footprint.png"/>
                     </div>
                 </div>
-                <div class="reserv">
-                    <div class="cont_mane">
+            </div>
+            <div class="reserv">
+                <div class="cont_mane">
                         <label for="name">Имя</label>
-                    <div>
+                        <div>
                         <input type="text" id="name">
+                        </div>
+                </div>
+                <div class="cont_checkin">
+                    <label for="checkin">Дата заезда</label>
+                    <div>
+                    <input type="text" id="phone">
                     </div>
                 </div>
                 <div class="cont_phone">
                     <label for="phone">Телефон</label>
                     <div>
-                        <input type="text" id="phone">
-                    </div>
-                </div>
-                <div class="cont_checkin">
-                        <label for="checkin">Дата заезда</label>
-                    <div>
                         <input type="text" id="checkin">
                     </div>
                 </div>
                 <div class="cont_checkout">
-                        <label for="checkout">Дата выезда</label>
+                    <label for="checkout">Дата выезда</label>
                     <div>
                         <input type="text" id="checkout">
                     </div>
                 </div>
                 <div class="cont_petmane">
-                        <label for="petname">Кличка животного</label>
+                    <label for="petname">Кличка животного</label>
                     <div>
                         <input type="text" id="petname">
                     </div>
                 </div>
                 <div class="cont_type">
-                        <label for="type">Тип номера</label>
+                    <label for="type">Тип номера</label>
                     <div>
                         <input type="text" id="type">
                     </div>
                 </div>
                 <div class="cont_note">
-                        <label for="note">Примечание</label>
+                    <label for="note">Примечание</label>
                     <div>
                         <input class="input_note" type="text" id="note">
                     </div>
                 </div>
-                <div class="button">
+                <div class="cont_button">
                     <button type="submit" class="reservation_button">
                     Забронировать
                     </button>
